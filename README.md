@@ -14,43 +14,50 @@ _Create workflows that enable you to use Continuous Integration (CI) for your pr
 </header>
 
 <!--
-  <<< Author notes: Step 5 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
+  <<< Author notes: Course start >>>
+  Include start button, a note about Actions minutes,
+  and tell the learner why they should take the course.
 -->
 
-## Step 5: Merge your pull request
+## Welcome
 
-_Almost there! :heart:_
+[Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) can help you stick to your team’s quality standards by running tests and reporting the results on GitHub. CI tools run builds and tests, triggered by commits. The results post back to GitHub in the pull request. The goal is fewer issues in `main` and faster feedback as you work.
 
-You can now [merge](https://docs.github.com/get-started/quickstart/github-glossary#merge) your pull request!
+- **Who is this for**: Developers, DevOps Engineers, new GitHub users, students, teams.
+- **What you'll learn**: What continuous integration is, how to use GitHub Actions for CI, how to create a workflow that runs tests and produces test reports.
+- **What you'll build**: We'll use [remark-lint](https://github.com/remarkjs/remark-lint) to check the consistency of Markdown files.
+- **Prerequisites**: We assume you've completed [Hello GitHub Actions](https://github.com/skills/hello-github-actions) first.
+- **How long**: This course takes less than two hours to complete.
 
-### :keyboard: Activity: Merge your pull request
+In this course, you will:
 
-1. Go to the **Pull requests** tab.
-1. Resolve any merge conflicts. <!-- TODO: figure out a better way to deal with the merge conflicts. -->
-1. Click **Merge pull request**.
-1. _Once you turn on branch protection, Actions can no longer push directly to the `main` branch. Make sure that you're on the `ci` branch in the page you're following instructions from._ Wait about 20 seconds and then refresh the page. [GitHub Actions](https://docs.github.com/actions) will automatically update to the next step.
-=======
-## Step 4: Add branch protections
+1. Add a test workflow
+2. Fix the test
+3. Upload a test report
+4. Add branch protections
+5. Merge your pull request
 
-_Great job uploading test reports! :partying_face:_
+### How to start this course
 
-Take a look at the merge box, you'll notice you can merge this even though the review process hasn't been met.
+<!-- For start course, run in JavaScript:
+'https://github.com/new?' + new URLSearchParams({
+  template_owner: 'skills',
+  template_name: 'test-with-actions',
+  owner: '@me',
+  name: 'skills-test-with-actions',
+  description: 'My clone repository',
+  visibility: 'public',
+}).toString()
+-->
 
-Protected branches ensure that collaborators on your repository cannot make irrevocable changes to branches. Enabling protected branches also allows you to enable other optional checks and requirements, like required status checks and required reviews.
+[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=skills&template_name=test-with-actions&owner=%40me&name=skills-test-with-actions&description=My+clone+repository&visibility=public)
 
-### :keyboard: Activity: Add branch protections
-
-1. Go to **Branches** settings. You can navigate to that page manually by selecting the right-most tab in the top of the repository called **Settings** and then clicking **Branches**.
-1. Click **Add branch protection rule** under "Branch protection rules".
-1. Type `main` in **Branch name pattern**.
-1. Check **Require a pull request before merging**.
-1. Uncheck **Require approvals**.
-1. Check **Require status checks to pass before merging**.
-1. Check all build and test jobs that you'd like to see in the newly visible gray box.
-1. Click **Create**.
-1. _Once you turn on branch protection, Actions can no longer push directly to the `main` branch. Wait about 20 seconds and then go to the `ci` branch. [GitHub Actions](https://docs.github.com/actions) will automatically update to the next step on the `ci` branch. You'll need to follow instructions on this branch._
+1. Right-click **Start course** and open the link in a new tab.
+2. In the new tab, most of the prompts will automatically fill in for you.
+   - For owner, choose your personal account or an organization to host the repository.
+   - We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.com/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
+   - Scroll down and click the **Create repository** button at the bottom of the form.
+3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
 
 <footer>
 
